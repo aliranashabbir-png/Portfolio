@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Jane Doe | Portfolio</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <!-- ===== Header / Navbar ===== -->
+  <header>
+    <div class="container">
+      <div class="left">
+        <h2>Shabbir Ali</h2>
+        <p>shabbir187r@gmail.com</p>
+        <p>📞 +92306 5497547</p>
+      </div>
+      <nav class="right">
+        <a href="#">About Me</a>
+        <a href="#">Skills</a>
+        <a href="#">Projects</a>
+        <a href="#">Recommendations</a>
+      </nav>
+    </div>
+  </header>
+
+  <!-- ===== Intro Section ===== -->
+  <section class="intro">
+    <div class="intro-container">
+      <div class="image">
+        <img src="img/pic.jpg" alt="Developer Illustration" />
+      </div>
+      <div class="text">
+        <h1>Hi, I'm Jane Doe! 👋</h1>
+        <p>
+          I am a full stack developer with 2 years of experience in both
+          application and presentation layers. I have worked on applications and
+          microservices deployed on IBM Cloud. I am an avid user of IBM Watson
+          Services and have worked on Watson Assistant, NLU, and Sentiment
+          Analyzer to name a few.
+        </p>
+      </div>
+    </div>
+  </section>
+  <!-- ===== Skills Section ===== -->
+<section class="skills-section">
+  <h2 class="skills-title">Skills</h2>
+  <div class="skills-grid">
+    <div class="skill-card">
+      <img src="https://cdn-icons-png.flaticon.com/512/732/732212.png" alt="HTML">
+      <h3>HTML</h3>
+      <p>2 years experience</p>
+    </div>
+    <div class="skill-card">
+      <img src="https://cdn-icons-png.flaticon.com/512/5968/5968292.png" alt="JavaScript">
+      <h3>JavaScript</h3>
+      <p>2 years experience</p>
+    </div>
+    <div class="skill-card">
+      <img src="https://cdn-icons-png.flaticon.com/512/226/226777.png" alt="Java">
+      <h3>Java</h3>
+      <p>0.5 years experience</p>
+    </div>
+    <div class="skill-card">
+      <img src="https://cdn-icons-png.flaticon.com/512/1126/1126012.png" alt="React">
+      <h3>React</h3>
+      <p>1 year experience</p>
+    </div>
+    <div class="skill-card">
+      <img src="https://cdn-icons-png.flaticon.com/512/919/919825.png" alt="Node.js">
+      <h3>Node.js</h3>
+      <p>1 year experience</p>
+    </div>
+    <div class="skill-card">
+      <img src="https://cdn-icons-png.flaticon.com/512/732/732190.png" alt="CSS">
+      <h3>CSS</h3>
+      <p>2 years experience</p>
+    </div>
+  </div>
+</section>
+
+<!-- ===== Projects Section ===== -->
+<section class="projects-section">
+  <h2 class="projects-title">Projects</h2>
+
+  <div class="project">
+    <h3>Chatbot</h3>
+    <ul>
+      <li>Developed a secure website integrated with chatbot for an automobile client using HTML, CSS, JavaScript and IBM Watson Assistant</li>
+    </ul>
+  </div>
+
+  <div class="project">
+    <h3>Sentiment Analyzer</h3>
+    <ul>
+      <li>Developed and deployed a sentiment analyzer for the box reviews section of an eCommerce platform using IBM NLU</li>
+    </ul>
+  </div>
+
+  <div class="project">
+    <h3>Fashion Website</h3>
+    <ul>
+      <li>Created a styled multi-page website for a new player in the fashion industry and integrated it with a shopping cart, using Stripe for payment gateway</li>
+    </ul>
+  </div>
+</section>
+<!-- ===== Recommendations Section ===== -->
+<section class="recommendations-section">
+  <h2 class="recommendations-title">Recommendations</h2>
+
+  <div class="recommendation-cards">
+    <div class="card">
+      “ Jane is a very quick learner and quickly grasps key concepts of Web development. 
+      She got a great attitude & she is an excellent team player. She has a curious mind 
+      and asks the right question. She takes initiative within a team and has potentials to lead the team. ”
+    </div>
+    <div class="card">
+      “ Working with Jane has been an awesome experience. She is highly knowledgeable and 
+      always goes the extra step to make sure everything is right. For any future projects 
+      that need her expertise I would definitely want to work with her again. ”
+    </div>
+    <div class="card">
+      “ I had worked along with Jane during the initial phase of our venture which needed 
+      Web development. She is a committed resource who has in-depth knowledge about the 
+      domain. She will be an asset for any organisation! ”
+    </div>
+  </div>
+
+  <h3 class="leave-title">Leave a Recommendation</h3>
+  <form id="recommendationForm">
+    <input type="text" id="name" placeholder="Name (Optional)" />
+    <textarea id="message" placeholder="Message" required></textarea>
+    <button type="submit">Submit</button>
+  </form>
+</section>
+<script>
+  document.getElementById("recommendationForm").addEventListener("submit", function(event) {
+    event.preventDefault(); // stop page reload
+    const message = document.getElementById("message").value.trim();
+    
+    if (message) {
+      alert("✅ Your message was successfully sent!");
+      document.getElementById("recommendationForm").reset(); // clear form
+    } else {
+      alert("⚠️ Please enter a message before submitting.");
+    }
+  });
+</script>
+
+</body>
+</html>
